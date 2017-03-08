@@ -36,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(mWeb);
         // must t support javascript
         mWeb.getSettings().setJavaScriptEnabled(true);
+        mWeb.getSettings().setDomStorageEnabled(true);
         /* Register a new JavaScript interface called HTMLOUT */
         mWeb.addJavascriptInterface(new MyJavaScriptInterface(), "HTMLOUT");
 
