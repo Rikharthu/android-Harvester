@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.webkit.JavascriptInterface;
+import android.webkit.JsPromptResult;
+import android.webkit.WebChromeClient;
 import android.webkit.WebResourceRequest;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
@@ -42,6 +44,12 @@ public class MainActivity extends AppCompatActivity {
 
         HarvesterWebViewClient client = new HarvesterWebViewClient();
         mWeb.setWebViewClient(client);
+        mWeb.setWebChromeClient(new WebChromeClient(){
+            @Override
+            public void onProgressChanged(WebView view, int newProgress) {
+                super.onProgressChanged(view, newProgress);
+            }
+        });
 
         mWeb.loadUrl("https://search.accenture.com/?aid=ctl&k=clientname|st|volkswagen||a||cleangr1|st|&page=1");
     }
@@ -69,6 +77,11 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public boolean shouldOverrideUrlLoading(WebView view, String url) {
             return handleUrl(view,url);
+        }
+
+        @Override
+        public void onLoadResource(WebView view, String url) {
+            super.onLoadResource(view, url);
         }
 
         // handle url
