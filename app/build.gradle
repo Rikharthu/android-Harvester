@@ -26,4 +26,9 @@ dependencies {
     })
     compile 'com.android.support:appcompat-v7:25.1.1'
     testCompile 'junit:junit:4.12'
+
+    // https://mvnrepository.com/artifact/org.jsoup/jsoup
+    compile 'org.jsoup:jsoup:1.7.2'
+    compile 'net.sourceforge.jexcelapi:jxl:2.6.12'
+
 }
