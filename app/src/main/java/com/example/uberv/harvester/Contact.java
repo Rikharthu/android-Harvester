@@ -99,4 +99,23 @@ public class Contact {
     public Contact() {
 
     }
+
+    @Override
+    public String toString() {
+        return "Contact{" +
+                "clientName='" + clientName + '\'' +
+                ", primaryOg='" + primaryOg + '\'' +
+                ", mcClassification='" + mcClassification + '\'' +
+                ", geoArea='" + geoArea + '\'' +
+                ", role='" + role + '\'' +
+                ", person='" + person + '\'' +
+                ", personLink='" + personLink + '\'' +
+                ", geoUnit='" + geoUnit + '\'' +
+                ", countryForRole='" + countryForRole + '\'' +
+                '}';
+    }
+
+    public String toExcelString(){
+        return ";"+clientName+";"+primaryOg+";"+mcClassification+";"+geoArea+";"+role+";"+person+";"+geoUnit+";"+countryForRole;
+    }
 }

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="array_companies">
+        <item>Lindorff</item>
+        <item>H M</item>
+        <item>Adidas</item>
+        <!--FIXME cannot load pages that are 1 page-->
+        <item>Grundfos</item>
+        <item>Austrian Post</item>
+        <item>Credit Suisse</item>
+        <item>BMW AG</item>
+        <item>Statoil</item>
+        <item>DNB</item>
+        <item>Engie</item>
+        <item>Lindorff</item>
+        <item>Novartis</item>
+        <item>Telenor</item>
+        <item>Skoda</item>
+        <item>Telia</item>
+        <item>VELUX</item>
+        <item>Uponor</item>
+        <item>Fortum</item>
+        <item>Axfood</item>
+        <item>Kingfisher</item>
+        <item>Lloyd</item>
+        <item>Merck</item>
+        <item>Nokia</item>
+        <item>Nordea</item>
+        <item>BASF</item>
+        <item>TRYG</item>
+        <item>3M</item>
+        <item>Nestle</item>
+        <item>Vodafone</item>
+        <item>Volkswagen</item>
+    </string-array>
+</resources>
